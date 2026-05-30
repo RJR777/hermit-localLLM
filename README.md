@@ -18,6 +18,10 @@ The folder structure is:
 - `third_party/bitnet/`: the BitNet source checkout used for static library builds.
 - `kernel/`, `loader/`, `hermit-rs/`, and `usb-oxide/`: Hermit and device support used by the bare-metal image.
 
+## Demo
+
+[Watch the bare-metal boot and local inference demo](./hermit-localLLM-demo.mp4)
+
 ## Requirements
 
 The build needs Rust, the Hermit cross toolchain, and native build tools:
