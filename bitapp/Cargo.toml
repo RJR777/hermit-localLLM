@@ -1,0 +1,31 @@
+[package]
+name = "bitapp"
+authors = ["OpenAI"]
+edition = "2021"
+
+[target.'cfg(target_os = "hermit")'.dependencies]
+hermit = { path = "../hermit-rs/hermit", default-features = false }
+
+[features]
+default = [
+    "acpi",
+    "dhcpv4",
+    "pci",
+    "pci-ids",
+    "rtl8152",
+    "tcp",
+    "udp",
+]
+acpi = ["hermit/acpi"]
+dhcpv4 = ["hermit/dhcpv4"]
+pci = ["hermit/pci"]
+pci-ids = ["hermit/pci-ids"]
+rtl8152 = ["hermit/rtl8152"]
+tcp = ["hermit/tcp"]
+udp = ["hermit/udp"]
+newlib = ["hermit/newlib"]
+smp = ["hermit/smp"]
+
+[build-dependencies]
+cc = "1.0"
+

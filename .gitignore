@@ -1,0 +1,17 @@
+/target/
+target/
+**/target/
+third_party/bitnet/build/
+target/bitnet-hermit-static/
+target/bitnet-hermit-toolchain.cmake
+
+*.gguf
+*.img
+*.fd
+*.log
+*.elf
+*.loader
+hermit-app
+hermit-loader
+hermit-loader.elf
+

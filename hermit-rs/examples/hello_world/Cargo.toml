@@ -1,0 +1,10 @@
+[package]
+name = "hello_world"
+authors = ["Stefan Lankes <slankes@eonerc.rwth-aachen.de>"]
+edition = "2021"
+
+[target.'cfg(target_os = "hermit")'.dependencies]
+hermit = { path = "../../hermit", default-features = false }
+
+[features]
+default = ["hermit/acpi", "hermit/dhcpv4", "hermit/dns", "hermit/net", "hermit/pci", "hermit/smp", "hermit/tcp", "hermit/udp", "hermit/vga"]

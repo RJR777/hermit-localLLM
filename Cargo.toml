@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = [
+    "bitapp",
+    "usb-oxide",
+]
+exclude = [
+    "hermit-rs",
+    "kernel",
+    "loader",
+]
+
+[patch.crates-io]
+usb-oxide = { path = "usb-oxide" }
+
+[profile.profiling]
+inherits = "release"
+debug = "line-tables-only"
