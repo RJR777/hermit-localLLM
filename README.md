@@ -1,10 +1,12 @@
 # Hermit localLLM
 
 This repository is a proof of concept for running a local inference engine from
-a Rust unikernel on bare metal. The goal is to prove that a Rust unikernel can boot on real hardware, 
-bring up the required device stack, ingest a local GGUF model, and run inference without a host operating system.
+a Rust unikernel on bare metal. The goal is to prove that a Rust unikernel can
+boot on real hardware, bring up the required device stack, ingest a local GGUF
+model, and run inference without a host operating system.
 
-I wanted to build a full Rust stack but I could not find a inference engine as robust as llama.cpp
+I wanted to build a full Rust stack but I could not find an inference engine as
+robust as llama.cpp.
 
 The current bare-metal target is a Dell Inspiron 7000-class machine. Other
 hardware platforms may need code changes in boot, ACPI/PCI discovery, storage,
@@ -20,7 +22,10 @@ The folder structure is:
 
 ## Demo
 
-[Watch the bare-metal boot and local inference demo](./hermit-localLLM-demo.mp4)
+[![Bare-metal boot and local inference demo preview](assets/demo-preview.gif)](https://github.com/RJR777/hermit-localLLM/releases/tag/demo-2026-05-30)
+
+The full H.264 MP4 is attached to the GitHub release:
+[Bare-metal demo](https://github.com/RJR777/hermit-localLLM/releases/tag/demo-2026-05-30).
 
 ## Requirements
 
